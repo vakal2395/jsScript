@@ -26,7 +26,7 @@ while (i <= 100) {
 
 	}
 	
-}
+}*/
 /*var b = 8;
 var c = 3;
 
@@ -40,4 +40,4 @@ document.write("a > c");
 
 else{
 	document.write("error");
-}
+}*/
