@@ -1,10 +1,10 @@
-/*var a=0;
+var a=0;
 var b=0;
 while(a <= 100){
 b+=a;
 a++;
 console.log(b);
-}*/
+}
 
 
 var i = 0;
@@ -40,4 +40,4 @@ document.write("a > c");
 
 else{
 	document.write("error");
-}*/
+}
