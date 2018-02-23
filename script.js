@@ -131,10 +131,10 @@ var candy =	prompt("Хотите батончик ? Нажмите : (1) - Baunt
   		break;
   }
 
-// var rad = Number(prompt("input radius"));
-//  var pi = 3.14;
-// var r2 =Math.pow(rad,2);
+var rad = Number(prompt("input radius"));
+ var pi = 3.14;
+var r2 =Math.pow(rad,2);
 
-//  var l = 2 * pi *rad;
-//  var S = pi *r2;
-//  document.write("Длина круга :  " + l.toFixed(0) + "<br>" + "Площадь круга :  " + S.toFixed(0));
+ var l = 2 * pi *rad;
+ var S = pi *r2;
+ document.write("Длина круга :  " + l.toFixed(0) + "<br>" + "Площадь круга :  " + S.toFixed(0));
