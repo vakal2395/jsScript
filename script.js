@@ -42,32 +42,57 @@
 //   }
   
 // }
+
+
  var a= Number(prompt("Введите сумму от 5 до 20"));
 var lat = 10;
 var am = 5;
 var cap = 8;
-if (a < 5) {
-var b =	Number(prompt("Недостаточно средств! Нужно внести еще :"));
-var a = a + b;
-}if (a >= 5) {
-	var c = prompt("Выберите напиток и Введите соответствующую цыфру: (1)Late : 10грн; (2)Amerekano : 5грн; (3)Capushino : 8грн;");
+
+
+while(a < 5){
+    
+    var b = Number(prompt("Недостаточно средств!  " + "Ваш лимит : " + a + " !!!" + " Нужно внести еще :"));
+    a += b;
+  }
+
+
+if (a >= 5) {
+	var c = prompt("Ваш лимит :   " + a  + "  Выберите напиток и Введите соответствующую цыфру: (1)Late : 10грн; (2)Amerekano : 5грн; (3)Capushino : 8грн;");
 }
   switch (c){
   	case "1" :
+    while(a <= lat){
+    var b = Number(prompt("Недостаточно средств!  " + "Ваш лимит : " + a + " !!!" + " Нужно внести еще :"));
+    a += b;
+  }
   		var sum = a - lat;
-  		alert("Bаш Late готовится !" + "Ваша сдача :  " + sum + "грн.");
+  		alert("Bаш Late готовится !");
   		break;
   	case "2" :
+     while(a <= am){
+    var b = Number(prompt("Недостаточно средств!  " + "Ваш лимит : " + a + " !!!" + " Нужно внести еще :"));
+    a += b;
+  }
   	var sum = a - am;
-  		alert("Bаш Amerekano готовится !" + "Ваша сдача :  " + sum + "грн.");
+  		alert("Bаш Amerekano готовится !");
   		break;
   	case "3" :
+     while(a <= cap){
+    var b = Number(prompt("Недостаточно средств!  " + "Ваш лимит : " + a + " !!!" + " Нужно внести еще :"));
+    a += b;
+  }
   	var sum = a - cap;
-  		alert("Bаш Capushino готовится !" + "Ваша сдача :  " + sum + "грн.");
+  		alert("Bаш Capushino готовится !");
   		break;
   }
+  while(a <= 5){
+    alert("please enter more money");
+    var b = Number(prompt("Недостаточно средств!  " + "Ваш лимит : " + a + " !!!" + " Нужно внести еще :"));
+    a += b;
+  }
 
-  if (sum < 5) {
+  if (sum < 5 && sum > 0 ) {
   	alert("Ваш напиток готов !! Возьмите вашу здачу : " + sum);
   }
 else if (sum >= 5) {
@@ -78,14 +103,26 @@ var candy =	prompt("Хотите батончик ? Нажмите : (1) - Baunt
 
  switch (candy){
   	case "1" :
+       while(sum < baun){
+        var b = Number(prompt("Недостаточно средств!  " + "Ваш лимит : " + sum + " !!!" + " Нужно внести еще :"));
+        sum += b;
+        } 
   		var sum1 = sum - baun;
   		alert("Ваш напиток готов !"+ "Возьмите вашу сдачу :  " + sum1 + "грн.");
   		break;
   	case "2" :
+       while(sum < baun){
+      var b = Number(prompt("Недостаточно средств!  " + "Ваш лимит : " + sum + " !!!" + " Нужно внести еще :"));
+      sum += b;
+      }
   		var sum1 = sum - baun;
   		alert("Ваш напиток готов !" + "Возьмите вашу сдачу :  " + sum1 + "грн.");
   		break;
   	case "3" :
+     while(sum < lion){
+      var b = Number(prompt("Недостаточно средств!  " + "Ваш лимит : " + sum + " !!!" + " Нужно внести еще :"));
+      sum += b;
+      }
   		var sum1 = sum - lion;
   		alert("Ваш напиток готов !" + "Возьмите вашу сдачу :  " + sum1 + "грн.");
   		break;
@@ -93,3 +130,11 @@ var candy =	prompt("Хотите батончик ? Нажмите : (1) - Baunt
   		alert("Ваш напиток готов !" + "Возьмите вашу сдачу :  " + sum + "грн.");
   		break;
   }
+
+// var rad = Number(prompt("input radius"));
+//  var pi = 3.14;
+// var r2 =Math.pow(rad,2);
+
+//  var l = 2 * pi *rad;
+//  var S = pi *r2;
+//  document.write("Длина круга :  " + l.toFixed(0) + "<br>" + "Площадь круга :  " + S.toFixed(0));
