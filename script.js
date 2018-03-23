@@ -139,15 +139,131 @@
 //  var S = pi *r2;
 //  document.write("Длина круга :  " + l.toFixed(0) + "<br>" + "Площадь круга :  " + S.toFixed(0));
 
+ 
+// alert(mas);
+
+// var menu = {
+//   width: 300,
+//   height: 200,
+//   title: "Menu"
+// }
+// function isNumeric(n) {
+//   return !isNaN(parseFloat(n)) && isFinite(n)
+// }
+
+// function multiplyNumeric(obj){
+// 	for (var kay in obj) {
+// 		if(isNumeric(obj[kay])===true){
+// 				obj[kay]*=2;
+// 		}
+// 	}
+// 	return obj;
+// }
+// var menu2 = multiplyNumeric(menu);
+// console.log(menu2);
+
+// var mas = [];
+// var a = true;
+// 	while(a){
+// var num = Number(prompt('input number'));
+// 	if (num != '') {
+// 	mas.push(Number(num));
+// 	}
+// 	else{
+// 		a = false;
+// 	}
+// }
+// 	var sum =0;
+// 	for (var i = 0; i < mas.length; i++) {
+// 		sum = sum + mas[i];
+// 	}
+// 	document.write(sum);
+
+// function suma (arr){
+// 	var sum = 0;
+// for(var i = 0; i < arr.length; i++){
+// 	sum +=arr[i];
+// }
+// return sum;
+// }
+// suma(mas);
+
+// var count = 0;
+
+// for (var i = 2; i < 100 ; i++) {
+// 		for (var j = 1; j < i; j++) {
+// 			if(i%j === 0){
+// 				count++;
+// 			}
+// 		}
+// 	if(count < 2){
+// 		console.log(i);
+// 	}
+// 	count=0;
+// }
+
+// var a = [1,2,3,4,5,6];
+// var b = [7,8,9,10,11,12];
+// var c = [13,14,15,16,17,18];
+// var d = [19,20,21,22,23,24];
+
+// var matr =[];
+// matr.push(a,b,c,d);
+
+// for (var i = 0; i< matr.length;i++){
+// 	for(var j =0; j <matr[i].length;j++){
+// 		console.log(matr[i][j]);
+// 	}
+// }
+
 
 function fib() {
- var a = 1, b = 1;
- var n = Number(prompt("input number"));
- for (var i = 3; i <= n; i++) {
+	var mas = [];
+	var n = Number(prompt("input number"));
+ 	var a = 0, b = 1;
+ for (var i = 1; i <= n; i++) {
     var c = a + b;
     a = b;
-   b = c;
- }         
- return b;
+   b = c;        
+   mas.push(a);
+  }
+  alert(mas);
 }
-document.write(fib());
+fib();
+
+
+var mat =   [['1',3,4,5,false,6],
+			[1,3,'4' ,true,5,'k',6],
+			['1',3,4,5,false,6],
+			['1',3,4,'5',true,6],
+			['1',3,'4',5,false,6],
+			['1',3,4,5,'false',6]
+			]
+	
+	var arr = [];
+
+		for (var i = 0; i < mat.length; i++) {
+		  	for (var j = 0; j < mat[i].length; j++) {
+		 		if(typeof(mat[i][j])==="number"){
+		 			arr.push(mat[i][j]);
+		 		}
+		  	}
+		  }  
+		  alert(arr);
+
+var mat =   [
+			[1,2,3],
+			[4,5,6],
+			[7,8,9]
+				  ];
+
+	function digNum(mas){
+		var arr =[];
+		var pos = 1;
+		for (var i = 0; i < mas.length; i++) {
+			arr.push(mas[i][mas.length-pos]);
+				pos++;
+		}
+		alert(arr);
+	}
+	digNum(mat);
